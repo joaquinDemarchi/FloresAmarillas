@@ -14,7 +14,7 @@
 html, body { height: 100%; }
 
 body {
-  font-family: "Lora", Georgia, serif;
+  font-family: "Crimson Pro", Georgia, serif;
   color: var(--texto);
   background:
     radial-gradient(circle at 15% 10%, #FFF3C9 0%, transparent 45%),
@@ -140,7 +140,7 @@ html { overflow: hidden; }
 
 /* ================= Botones ================= */
 .btn {
-  font-family: "Lora", serif; font-size: 17px; font-weight: 500;
+  font-family: "Crimson Pro", serif; font-size: 17px; font-weight: 500;
   border: 0; border-radius: 999px; cursor: pointer;
   padding: 15px 30px;
   transition: transform .2s, box-shadow .2s, opacity .5s;
@@ -239,6 +239,10 @@ html { overflow: hidden; }
 .mensaje {
   font-size: 16.5px; line-height: 1.65;
   max-width: 34ch; margin: 0 auto;
+}
+.mensaje-nota {
+  display: inline-block; margin-top: 4px;
+  font-size: .85em; color: #B8B0A2;
 }
 .centro { text-align: center; }
 
