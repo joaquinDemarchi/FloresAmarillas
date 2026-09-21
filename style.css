@@ -79,7 +79,8 @@ body.modo-ramo .petalo.extra { display: block; }
 .progreso svg.lista { opacity: 1; filter: none; transform: scale(1.12); }
 
 /* ================= Pantallas ================= */
-#app { position: relative; z-index: 1; height: 100vh; height: 100dvh; }
+html { overflow: hidden; }
+#app { position: relative; z-index: 1; height: 100vh; height: 100dvh; overflow: hidden; }
 
 .pantalla {
   position: absolute; inset: 0;
@@ -199,6 +200,7 @@ body.modo-ramo .petalo.extra { display: block; }
 .titulo {
   font-size: clamp(32px, 9vw, 40px); line-height: 1.15; color: var(--amarillo-osc);
   margin: 2px 0 6px;
+  text-wrap: balance;
 }
 
 .polaroid {
@@ -436,6 +438,15 @@ body.modo-ramo .petalo.extra { display: block; }
   .nav { bottom: calc(14px + env(safe-area-inset-bottom)); }
   .progreso { top: calc(10px + env(safe-area-inset-top)); }
   .progreso svg { width: 20px; height: 20px; }
+}
+
+/* ================= Celulares altos 20:9 (ej. Redmi Note 13 Pro: ~393x780) ================= */
+@media (max-width: 480px) and (min-height: 700px) {
+  .pantalla {
+    padding-top: calc(54px + env(safe-area-inset-top));
+    padding-bottom: calc(88px + env(safe-area-inset-bottom));
+  }
+  .polaroid { width: min(66vw, 270px, 33vh); }
 }
 
 @media (max-height: 420px) {
