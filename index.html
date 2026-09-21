@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FFF8E7">
+  <meta name="robots" content="noindex">
+  <title>Para Sara 🌼</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌼</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= SVG reutilizables ================= -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <!-- Girasol -->
+      <linearGradient id="g-gira" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#FFE270"/>
+        <stop offset=".55" stop-color="#FFC21A"/>
+        <stop offset="1" stop-color="#E38D0A"/>
+      </linearGradient>
+      <linearGradient id="g-gira-atras" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#F7BE2A"/>
+        <stop offset="1" stop-color="#C46F08"/>
+      </linearGradient>
+      <radialGradient id="g-gira-centro" cx=".42" cy=".38" r=".7">
+        <stop offset="0" stop-color="#8A5516"/>
+        <stop offset="1" stop-color="#3A1F07"/>
+      </radialGradient>
+      <!-- Margarita -->
+      <linearGradient id="g-marg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#FFF7CF"/>
+        <stop offset=".6" stop-color="#FFE27A"/>
+        <stop offset="1" stop-color="#F4B12C"/>
+      </linearGradient>
+      <radialGradient id="g-marg-centro" cx=".4" cy=".35" r=".7">
+        <stop offset="0" stop-color="#FFBE3D"/>
+        <stop offset="1" stop-color="#D2700A"/>
+      </radialGradient>
+      <!-- Tulipán -->
+      <linearGradient id="g-tul-a" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#FFE884"/>
+        <stop offset="1" stop-color="#F0A416"/>
+      </linearGradient>
+      <linearGradient id="g-tul-b" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#F5C23A"/>
+        <stop offset="1" stop-color="#C9790A"/>
+      </linearGradient>
+      <linearGradient id="g-tul-c" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#FFF2AE"/>
+        <stop offset="1" stop-color="#F5B124"/>
+      </linearGradient>
+      <!-- Rosa -->
+      <radialGradient id="g-rosa" cx=".5" cy="1" r="1.05">
+        <stop offset="0" stop-color="#E28A0B"/>
+        <stop offset=".55" stop-color="#FFC940"/>
+        <stop offset="1" stop-color="#FFEFB0"/>
+      </radialGradient>
+      <!-- Relleno / hojas / envoltorio -->
+      <radialGradient id="g-mimosa" cx=".35" cy=".3" r=".7">
+        <stop offset="0" stop-color="#FFF0A0"/>
+        <stop offset="1" stop-color="#F2B705"/>
+      </radialGradient>
+      <linearGradient id="g-hoja" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#557F4E"/>
+        <stop offset="1" stop-color="#A3C98F"/>
+      </linearGradient>
+      <linearGradient id="g-kraft" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#F1DDB0"/>
+        <stop offset="1" stop-color="#D6B274"/>
+      </linearGradient>
+      <radialGradient id="g-halo">
+        <stop offset="0" stop-color="#FFF1B8" stop-opacity=".95"/>
+        <stop offset=".6" stop-color="#FFE9A0" stop-opacity=".35"/>
+        <stop offset="1" stop-color="#FFE9A0" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="g-destello" x1="0" y1="0" x2="1" y2=".35">
+        <stop offset=".38" stop-color="#fff" stop-opacity="0"/>
+        <stop offset=".5" stop-color="#fff" stop-opacity=".7"/>
+        <stop offset=".62" stop-color="#fff" stop-opacity="0"/>
+      </linearGradient>
+      <radialGradient id="g-sombra" cx=".5" cy=".5" r=".5">
+        <stop offset="0" stop-color="#6B3F0E" stop-opacity=".28"/>
+        <stop offset="1" stop-color="#6B3F0E" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="g-cinta-izq" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#FFDD7A"/>
+        <stop offset="1" stop-color="#E6980F"/>
+      </linearGradient>
+      <linearGradient id="g-cinta-der" x1="1" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#FFD35E"/>
+        <stop offset="1" stop-color="#D98A0B"/>
+      </linearGradient>
+      <radialGradient id="g-nudo" cx=".4" cy=".35" r=".75">
+        <stop offset="0" stop-color="#FFE9A6"/>
+        <stop offset="1" stop-color="#D98A0B"/>
+      </radialGradient>
+      <linearGradient id="g-cinta-osc" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#D89112"/>
+        <stop offset="1" stop-color="#A96305"/>
+      </linearGradient>
+      <linearGradient id="g-cinta-luz" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#FFEFAE"/>
+        <stop offset="1" stop-color="#F3B72B"/>
+      </linearGradient>
+      <filter id="f-sombra-blur" x="-60%" y="-60%" width="220%" height="220%">
+        <feGaussianBlur stdDeviation="7"/>
+      </filter>
+
+      <!-- Girasol (pétalos y semillas los genera script.js) -->
+      <symbol id="flor-girasol" viewBox="-50 -50 100 100">
+        <g id="gira-atras" fill="url(#g-gira-atras)"></g>
+        <g id="gira-frente" fill="url(#g-gira)"></g>
+        <g id="gira-venas" stroke="#D98A0B" stroke-opacity=".35" stroke-width=".7" fill="none"></g>
+        <circle r="17" fill="url(#g-gira-centro)"/>
+        <g id="gira-semillas"></g>
+        <circle r="17" fill="none" stroke="#2E1805" stroke-opacity=".4" stroke-width="1.2"/>
+      </symbol>
+
+      <!-- Margarita amarilla -->
+      <symbol id="flor-margarita" viewBox="-50 -50 100 100">
+        <g id="marg-atras" fill="url(#g-marg)" opacity=".8"></g>
+        <g id="marg-frente" fill="url(#g-marg)" stroke="#E9A01E" stroke-opacity=".3" stroke-width=".5"></g>
+        <circle r="11" fill="url(#g-marg-centro)"/>
+        <g id="marg-puntos" fill="#9A5205" opacity=".45"></g>
+      </symbol>
+
+      <!-- Tulipán amarillo -->
+      <symbol id="flor-tulipan" viewBox="-50 -50 100 100">
+        <path d="M-4 18 L4 18 L3 34 L-3 34Z" fill="#6E9B5F"/>
+        <path d="M-22 8 C-28 -18 -14 -38 0 -42 C14 -38 28 -18 22 8 C14 22 -14 22 -22 8Z" fill="url(#g-tul-b)"/>
+        <path d="M-24 4 C-30 -22 -18 -36 -6 -40 C-12 -22 -10 0 2 20 C-10 22 -20 16 -24 4Z" fill="url(#g-tul-a)"/>
+        <path d="M24 4 C30 -22 18 -36 6 -40 C12 -22 10 0 -2 20 C10 22 20 16 24 4Z" fill="url(#g-tul-a)"/>
+        <path d="M-13 12 C-18 -12 -8 -32 0 -40 C8 -32 18 -12 13 12 C7 21 -7 21 -13 12Z" fill="url(#g-tul-c)"/>
+        <path d="M0 -33 C-3 -20 -3 -2 0 14" stroke="#FFF6C8" stroke-width="1.4" fill="none" opacity=".7" stroke-linecap="round"/>
+        <path d="M-19 -6 C-19 -18 -14 -28 -8 -34" stroke="#FFF6C8" stroke-width="1" fill="none" opacity=".45" stroke-linecap="round"/>
+      </symbol>
+
+      <!-- Rosa amarilla (pétalos por script.js) -->
+      <symbol id="flor-rosa" viewBox="-50 -50 100 100">
+        <g id="rosa-petalos" fill="url(#g-rosa)" stroke="#C97A08" stroke-opacity=".35" stroke-width=".7"></g>
+        <circle r="6.5" fill="#EFA21C"/>
+        <path d="M0 0 C3 -3 6 0 4 4 C1 8 -6 6 -7 1 C-8 -5 -2 -9 3 -8" stroke="#A8620A" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+      </symbol>
+
+      <!-- Hoja -->
+      <symbol id="hoja" viewBox="0 -15 60 30">
+        <path d="M0 0 C12 -13 42 -14 60 0 C42 14 12 13 0 0Z" fill="url(#g-hoja)"/>
+        <path d="M2 0 Q30 -2 57 0" stroke="#46703F" stroke-width=".9" fill="none"/>
+        <path d="M18 -1 L26 -7 M30 -1 L38 -7 M42 -1 L48 -5 M18 0 L26 6 M30 0 L38 6 M42 0 L48 4" stroke="#46703F" stroke-width=".5" opacity=".6" fill="none"/>
+      </symbol>
+
+      <!-- Pimpollo -->
+      <symbol id="pimpollo" viewBox="-20 -30 40 50">
+        <path d="M0 -26 C10 -18 12 -4 0 4 C-12 -4 -10 -18 0 -26Z" fill="url(#g-tul-a)"/>
+        <path d="M0 -24 C4 -16 5 -6 0 2" stroke="#FFF6C8" stroke-width=".8" fill="none" opacity=".6"/>
+        <path d="M0 6 C-8 2 -12 -6 -10 -12 C-6 -4 -2 0 0 2 C2 0 6 -4 10 -12 C12 -6 8 2 0 6Z" fill="#6E9B5F"/>
+      </symbol>
+
+      <!-- Mimosa -->
+      <symbol id="mimosa" viewBox="-25 -25 50 50">
+        <g fill="url(#g-mimosa)">
+          <circle r="6"/><circle cx="-10" cy="-4" r="5"/><circle cx="9" cy="-6" r="5"/>
+          <circle cx="-4" cy="-12" r="4.5"/><circle cx="6" cy="9" r="5"/><circle cx="-9" cy="7" r="4.5"/>
+          <circle cx="14" cy="4" r="4"/><circle cx="-15" cy="-11" r="3.5"/><circle cx="15" cy="-14" r="3.5"/>
+          <circle cx="0" cy="14" r="4"/><circle cx="-2" cy="-21" r="3"/><circle cx="18" cy="12" r="3"/>
+          <circle cx="-18" cy="2" r="3.5"/><circle cx="8" cy="-18" r="3.5"/>
+        </g>
+      </symbol>
+
+      <!-- Florcita de 5 pétalos -->
+      <symbol id="florcita" viewBox="-20 -20 40 40">
+        <g fill="#FFE27A" stroke="#F0AE3C" stroke-width=".6">
+          <circle cy="-8" r="7"/><circle cy="-8" r="7" transform="rotate(72)"/>
+          <circle cy="-8" r="7" transform="rotate(144)"/><circle cy="-8" r="7" transform="rotate(216)"/>
+          <circle cy="-8" r="7" transform="rotate(288)"/>
+        </g>
+        <circle r="4" fill="#E38D0A"/>
+      </symbol>
+
+      <!-- Estrellita de destello estático -->
+      <symbol id="estrella" viewBox="-10 -10 20 20">
+        <path d="M0 -10 C.8 -3 3 -.8 10 0 C3 .8 .8 3 0 10 C-.8 3 -3 .8 -10 0 C-3 -.8 -.8 -3 0 -10Z" fill="#FFF3C4"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Pétalos de fondo -->
+  <div class="petalos-fondo" id="petalos" aria-hidden="true"></div>
+
+  <audio id="musica" src="musica.mp3" loop preload="auto"></audio>
+  <button class="btn-musica oculto" id="btnMusica" aria-label="Pausar música">🔊</button>
+
+  <!-- Progreso: las 4 flores recibidas -->
+  <div class="progreso oculto" id="progreso" aria-hidden="true">
+    <svg><use href="#flor-girasol"/></svg>
+    <svg><use href="#flor-margarita"/></svg>
+    <svg><use href="#flor-tulipan"/></svg>
+    <svg><use href="#flor-rosa"/></svg>
+  </div>
+
+  <main id="app">
+
+    <!-- 0 · PORTADA -->
+    <section class="pantalla portada activa" data-i="0">
+      <div class="contenido">
+        <h1 class="manuscrita titulo-portada">Para Sara 🌼</h1>
+        <p class="sub-portada">Este año no te traje flores amarillas.<br>Te traje un ramo que se arma de a una.</p>
+        <svg class="pimpollo-portada" id="pimpolloPortada" viewBox="0 0 120 200" aria-hidden="true">
+          <path d="M60 196 C57 165 63 125 60 86" stroke="#6E9B5F" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <use href="#hoja" x="0" y="-15" width="46" height="23" transform="translate(59 162) rotate(-150)"/>
+          <use href="#hoja" x="0" y="-15" width="40" height="20" transform="translate(61 132) rotate(-32)"/>
+          <use class="capullo" href="#pimpollo" x="30" y="30" width="60" height="75"/>
+        </svg>
+        <button class="btn btn-principal" id="btnAbrir">Abrir tu regalo</button>
+      </div>
+    </section>
+
+    <!-- 1 -->
+    <section class="pantalla paso" data-i="1">
+      <div class="contenido">
+        <svg class="flor-paso anim-flor"><use href="#flor-girasol"/></svg>
+        <p class="contador anim" style="--d:.35s">Flor 1 de 4</p>
+        <h2 class="manuscrita titulo anim" style="--d:.5s">Por qué te elijo</h2>
+        <figure class="polaroid" style="--rot:-3deg"><img src="fotos/Foto1.jpeg" alt="Sara y Joa"></figure>
+        <p class="mensaje anim" style="--d:1.1s">
+          Porque estar con vos me hace sentir pleno.
+          Feliz de verdad, de esa felicidad tranquila que no necesita nada más.
+          Te elijo porque con vos estoy donde quiero estar.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section class="pantalla paso" data-i="2">
+      <div class="contenido">
+        <svg class="flor-paso anim-flor"><use href="#flor-margarita"/></svg>
+        <p class="contador anim" style="--d:.35s">Flor 2 de 4</p>
+        <h2 class="manuscrita titulo anim" style="--d:.5s">Nuestro recuerdo</h2>
+        <figure class="polaroid" style="--rot:2.5deg"><img src="fotos/Foto2.jpeg" alt="Sara y Joa"></figure>
+        <p class="mensaje anim" style="--d:1.1s">
+          La primera vez que nos vimos fue un 29 de agosto.<br>
+          Ese fue el único año de mi vida en que la primavera empezó en agosto.
+        </p>
+      </div>
+    </section>
+
+    <!-- 3 -->
+    <section class="pantalla paso" data-i="3">
+      <div class="contenido">
+        <svg class="flor-paso anim-flor"><use href="#flor-tulipan"/></svg>
+        <p class="contador anim" style="--d:.35s">Flor 3 de 4</p>
+        <h2 class="manuscrita titulo anim" style="--d:.5s">Lo que más me gusta de vos</h2>
+        <figure class="polaroid" style="--rot:-2deg"><img src="fotos/Foto3.jpeg" alt="Sara y Joa"></figure>
+        <p class="mensaje anim" style="--d:1.1s">
+          Tu bondad: la forma en que dejás todo por y para los demás.
+          Y cómo contagiás a todos con tu alegría.<br>
+          Me gustás siempre, feliz y enojona. En todas tus formas.
+        </p>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section class="pantalla paso" data-i="4">
+      <div class="contenido">
+        <svg class="flor-paso anim-flor"><use href="#flor-rosa"/></svg>
+        <p class="contador anim" style="--d:.35s">Flor 4 de 4</p>
+        <h2 class="manuscrita titulo anim" style="--d:.5s">Lo que quiero vivir con vos</h2>
+        <figure class="polaroid" style="--rot:3deg"><img src="fotos/Foto4.jpeg" alt="Sara y Joa"></figure>
+        <p class="mensaje anim" style="--d:1.1s">
+          Quiero vivir mil primaveras más junto a vos, llenas de sueños cumplidos,
+          proyectos realizados y muchos viajecitos.<br>
+          Y que varias de esas primaveras sean en una casita en alguna sierrita de Córdoba.
+        </p>
+      </div>
+    </section>
+
+    <!-- 5 · RAMO -->
+    <section class="pantalla ramo-pantalla" data-i="5" id="pantallaRamo">
+      <div class="contenido">
+        <h2 class="manuscrita titulo anim" style="--d:.2s">Tu ramo 💛</h2>
+
+        <div class="ramo" id="ramo">
+          <svg class="ramo-svg" viewBox="0 0 340 470" role="img" aria-label="Ramo de flores amarillas">
+            <circle class="halo" cx="170" cy="175" r="165" fill="url(#g-halo)"/>
+            <ellipse class="sombra-suelo" cx="170" cy="443" rx="95" ry="16" fill="url(#g-sombra)" filter="url(#f-sombra-blur)"/>
+
+            <g class="conjunto">
+              <!-- envoltorio trasero -->
+              <path class="env env-atras" d="M36 206 Q104 176 170 194 Q236 176 304 206 L206 446 L134 446Z" fill="#F8ECCF" stroke="#E6CF9C" stroke-width="1.5"/>
+
+              <!-- tallos -->
+              <g class="tallos" fill="none" stroke-linecap="round">
+                <g stroke="#7FA86F" stroke-width="1.8">
+                  <path pathLength="1" style="--d:.45s" d="M170 345 C150 260 80 170 55 118"/>
+                  <path pathLength="1" style="--d:.5s"  d="M170 345 C190 260 265 170 290 108"/>
+                  <path pathLength="1" style="--d:.55s" d="M170 345 C160 250 125 140 115 70"/>
+                  <path pathLength="1" style="--d:.6s"  d="M170 345 C182 240 220 120 228 64"/>
+                  <path pathLength="1" style="--d:.65s" d="M170 345 C140 290 60 250 38 222"/>
+                  <path pathLength="1" style="--d:.7s"  d="M170 345 C200 300 280 260 306 232"/>
+                  <path pathLength="1" style="--d:.75s" d="M170 345 C185 300 230 270 242 252"/>
+                  <path pathLength="1" style="--d:.8s"  d="M170 345 C155 300 110 275 98 262"/>
+                  <path pathLength="1" style="--d:.85s" d="M170 345 C200 270 285 210 300 172"/>
+                  <path pathLength="1" style="--d:.9s"  d="M170 345 C150 300 95 250 72 210"/>
+                  <path pathLength="1" style="--d:.95s" d="M170 345 C192 300 248 252 272 216"/>
+                  <path pathLength="1" style="--d:1s"   d="M170 345 C158 278 106 178 86 112"/>
+                  <path pathLength="1" style="--d:1.05s" d="M170 345 C188 275 234 162 255 82"/>
+                </g>
+                <g stroke="#6E9B5F" stroke-width="3.4">
+                  <path pathLength="1" style="--d:.4s"  d="M170 345 C168 280 172 200 175 120"/>
+                  <path pathLength="1" style="--d:.55s" d="M170 345 C160 280 118 210 92 162"/>
+                  <path pathLength="1" style="--d:.7s"  d="M170 345 C180 280 225 214 255 170"/>
+                  <path pathLength="1" style="--d:.85s" d="M170 345 C168 300 163 260 160 225"/>
+                  <path pathLength="1" style="--d:1s"   d="M170 345 C182 320 208 290 220 266"/>
+                </g>
+              </g>
+
+              <!-- hojas (la base de cada hoja está en el translate) -->
+              <g class="hojas">
+                <g transform="translate(166 292) rotate(-150)"><use href="#hoja" x="0" y="-15" width="66" height="33" style="--d:1.2s"/></g>
+                <g transform="translate(174 288) rotate(-30)"><use href="#hoja" x="0" y="-15" width="66" height="33" style="--d:1.3s"/></g>
+                <g transform="translate(150 262) rotate(-168)"><use href="#hoja" x="0" y="-15" width="56" height="28" style="--d:1.4s"/></g>
+                <g transform="translate(192 258) rotate(-12)"><use href="#hoja" x="0" y="-15" width="56" height="28" style="--d:1.5s"/></g>
+                <g transform="translate(138 222) rotate(-125)"><use href="#hoja" x="0" y="-15" width="50" height="25" style="--d:1.6s"/></g>
+                <g transform="translate(204 214) rotate(-55)"><use href="#hoja" x="0" y="-15" width="50" height="25" style="--d:1.7s"/></g>
+                <g transform="translate(116 196) rotate(-165)"><use href="#hoja" x="0" y="-15" width="46" height="23" style="--d:1.8s"/></g>
+                <g transform="translate(228 190) rotate(-18)"><use href="#hoja" x="0" y="-15" width="46" height="23" style="--d:1.9s"/></g>
+                <g transform="translate(160 240) rotate(-172)"><use href="#hoja" x="0" y="-15" width="40" height="20" style="--d:2.0s"/></g>
+                <g transform="translate(184 236) rotate(-8)"><use href="#hoja" x="0" y="-15" width="40" height="20" style="--d:2.1s"/></g>
+              </g>
+
+              <!-- flores secundarias (van detrás de las principales) -->
+              <g class="flores-extra">
+                <use class="abre" href="#flor-margarita" x="55"  y="81"  width="62" height="62" style="--d:2.9s"/>
+                <use class="abre" href="#flor-girasol"   x="226" y="50"  width="58" height="58" style="--d:3.05s"/>
+                <use class="abre" href="#flor-rosa"      x="42"  y="180" width="60" height="60" style="--d:3.2s"/>
+                <use class="abre" href="#flor-tulipan"   x="243" y="187" width="58" height="58" style="--d:3.35s"/>
+                <use class="abre" href="#flor-rosa"      x="195" y="241" width="50" height="50" style="--d:3.5s"/>
+              </g>
+
+              <!-- flores de relleno -->
+              <g class="relleno">
+                <use class="abre" href="#mimosa"   x="31"  y="86"  width="48" height="48" style="--d:3.2s"/>
+                <use class="abre" href="#mimosa"   x="267" y="77"  width="46" height="46" style="--d:3.35s"/>
+                <use class="abre" href="#mimosa"   x="93"  y="40"  width="44" height="44" style="--d:3.5s"/>
+                <use class="abre" href="#pimpollo" x="214" y="34"  width="28" height="35" style="--d:3.65s"/>
+                <use class="abre" href="#pimpollo" x="23"  y="194" width="26" height="33" style="--d:3.8s"/>
+                <use class="abre" href="#pimpollo" x="295" y="206" width="26" height="33" style="--d:3.95s"/>
+                <use class="abre" href="#florcita" x="225" y="231" width="34" height="34" style="--d:4.1s"/>
+                <use class="abre" href="#florcita" x="82"  y="242" width="32" height="32" style="--d:4.2s"/>
+                <use class="abre" href="#florcita" x="285" y="155" width="30" height="30" style="--d:4.3s"/>
+                <use class="abre" href="#mimosa"   x="150" y="18"  width="34" height="34" style="--d:4.4s"/>
+                <use class="abre" href="#florcita" x="46"  y="150" width="26" height="26" style="--d:4.5s"/>
+                <use class="abre" href="#pimpollo" x="258" y="140" width="22" height="28" style="--d:4.6s"/>
+                <use class="abre" href="#florcita" x="8"   y="110" width="26" height="26" style="--d:4.7s"/>
+                <use class="abre" href="#mimosa"   x="196" y="6"   width="30" height="30" style="--d:4.8s"/>
+                <use class="abre" href="#pimpollo" x="62"  y="56"  width="22" height="28" style="--d:4.9s"/>
+                <use class="abre" href="#florcita" x="246" y="100" width="26" height="26" style="--d:5s"/>
+                <use class="abre" href="#florcita" x="138" y="256" width="28" height="28" style="--d:5.1s"/>
+              </g>
+
+              <!-- flores principales (una por paso) -->
+              <g class="rf" style="--d:1.9s;--dx:-170px;--dy:-40px;--r:-50deg">
+                <use class="respira" href="#flor-margarita" x="47" y="117" width="90" height="90"/>
+              </g>
+              <g class="rf" style="--d:2.3s;--dx:170px;--dy:-30px;--r:45deg">
+                <use class="respira" href="#flor-tulipan" x="207" y="112" width="96" height="96"/>
+              </g>
+              <g class="rf" style="--d:2.7s;--dx:0px;--dy:-200px;--r:-30deg">
+                <use class="respira" href="#flor-girasol" x="115" y="58" width="122" height="122"/>
+              </g>
+              <g class="rf" style="--d:3.1s;--dx:-60px;--dy:180px;--r:60deg">
+                <use class="respira" href="#flor-rosa" x="115" y="180" width="90" height="90"/>
+              </g>
+
+              <!-- envoltorio delantero -->
+              <g class="env env-frente">
+                <path d="M60 262 Q118 300 170 290 Q222 300 280 262 L200 448 Q170 458 140 448Z" fill="url(#g-kraft)"/>
+                <path d="M170 292 L170 452 M122 292 L152 450 M218 292 L188 450" stroke="#8A5A12" stroke-opacity=".13" stroke-width="1.2" fill="none"/>
+                <path d="M60 262 Q118 300 170 290 Q222 300 280 262" stroke="#FFF7E2" stroke-width="2" fill="none" opacity=".8"/>
+              </g>
+
+              <!-- moño -->
+              <g class="mono">
+                <!-- sombra del moño sobre el papel -->
+                <ellipse cx="170" cy="346" rx="78" ry="27" fill="#8A5A12" opacity=".12"/>
+
+                <!-- colas largas con muesca -->
+                <path class="cola cola-izq" d="M161 348 C153 375 143 400 132 428 L146 421 L151 437 C161 409 170 379 177 353Z" fill="url(#g-cinta-izq)"/>
+                <path class="cola cola-der" d="M179 348 C187 375 197 400 208 428 L194 421 L189 437 C179 409 170 379 163 353Z" fill="url(#g-cinta-der)"/>
+                <path d="M167 356 C161 378 155 398 146 420 M173 356 C179 378 185 398 194 420"
+                      stroke="#FFF3BE" stroke-width="1" fill="none" opacity=".45" stroke-linecap="round"/>
+
+                <!-- lazadas traseras: apenas asoman y dan volumen -->
+                <path d="M170 340 C143 302 97 309 104 338 C110 366 147 365 170 340Z" fill="url(#g-cinta-osc)" opacity=".5"/>
+                <path d="M170 340 C197 302 243 309 236 338 C230 366 193 365 170 340Z" fill="url(#g-cinta-osc)" opacity=".5"/>
+
+                <!-- lazadas delanteras -->
+                <path d="M170 340 C145 305 104 311 110 338 C116 363 148 362 170 340Z" fill="url(#g-cinta-izq)" stroke="#C47F0A" stroke-width=".9"/>
+                <path d="M170 340 C195 305 236 311 230 338 C224 363 192 362 170 340Z" fill="url(#g-cinta-der)" stroke="#C47F0A" stroke-width=".9"/>
+
+                <!-- sombra del pliegue dentro de cada lazada -->
+                <path d="M170 341 C154 341 136 347 126 355 C138 359 154 356 170 342Z" fill="#C47F0A" opacity=".26"/>
+                <path d="M170 341 C186 341 204 347 214 355 C202 359 186 356 170 342Z" fill="#C47F0A" opacity=".26"/>
+
+                <!-- pliegues que nacen del nudo -->
+                <path d="M170 340 C156 331 138 328 122 331 M170 340 C184 331 202 328 218 331"
+                      stroke="#B9720A" stroke-width="1" fill="none" opacity=".38" stroke-linecap="round"/>
+                <path d="M168 346 C155 348 140 350 128 348 M172 346 C185 348 200 350 212 348"
+                      stroke="#B9720A" stroke-width=".7" fill="none" opacity=".22" stroke-linecap="round"/>
+
+                <!-- brillos sobre las lazadas -->
+                <path d="M122 330 C131 320 146 315 159 321 M218 330 C209 320 194 315 181 321"
+                      stroke="#FFF9E0" stroke-width="1.8" fill="none" opacity=".8" stroke-linecap="round"/>
+                <path d="M113 342 C115 351 123 357 133 359 M227 342 C225 351 217 357 207 359"
+                      stroke="#FFF3C4" stroke-width="1" fill="none" opacity=".35" stroke-linecap="round"/>
+
+                <!-- cintas cortas que salen del nudo -->
+                <path d="M168 344 C159 349 152 356 149 364 C157 359 165 352 171 347Z" fill="url(#g-cinta-luz)"/>
+                <path d="M172 344 C181 349 188 356 191 364 C183 359 175 352 169 347Z" fill="url(#g-cinta-luz)"/>
+
+                <!-- nudo central -->
+                <ellipse cx="170" cy="340" rx="11.5" ry="12.5" fill="url(#g-nudo)" stroke="#C47F0A" stroke-width="1"/>
+                <path d="M163 330 C160 336 160 344 163 350 M177 330 C180 336 180 344 177 350"
+                      stroke="#C47F0A" stroke-width=".8" fill="none" opacity=".4" stroke-linecap="round"/>
+                <path d="M160 340 C165 338 175 338 180 340" stroke="#FFF6D8" stroke-width=".9" fill="none" opacity=".45" stroke-linecap="round"/>
+                <ellipse cx="166" cy="335.5" rx="3.4" ry="2.4" fill="#FFF9E4" opacity=".85"/>
+              </g>
+
+              <!-- destellos estáticos -->
+              <g class="brillos">
+                <use href="#estrella" x="52" y="60" width="14" height="14" style="--d:5.2s;--dur:3.4s"/>
+                <use href="#estrella" x="262" y="52" width="11" height="11" style="--d:5.6s;--dur:3.1s"/>
+                <use href="#estrella" x="200" y="16" width="10" height="10" style="--d:6.0s;--dur:3.6s"/>
+                <use href="#estrella" x="90" y="12" width="9"  height="9"  style="--d:6.3s;--dur:2.9s"/>
+                <use href="#estrella" x="295" y="130" width="10" height="10" style="--d:5.9s;--dur:3.3s"/>
+                <use href="#estrella" x="24"  y="132" width="11" height="11" style="--d:6.6s;--dur:3.5s"/>
+                <use href="#estrella" x="146" y="300" width="9"  height="9"  style="--d:6.1s;--dur:3.2s"/>
+                <use href="#estrella" x="196" y="308" width="8"  height="8"  style="--d:6.8s;--dur:2.8s"/>
+              </g>
+            </g>
+
+            <rect class="destello" x="0" y="0" width="340" height="470" fill="url(#g-destello)"/>
+          </svg>
+          <div class="chispas" id="chispas"></div>
+        </div>
+
+        <p class="mensaje centro anim anim-final">Cada flor es algo que siento por vos.<br>Juntas no se marchitan.</p>
+        <p class="pista-toque anim anim-final2">(tocá las flores)</p>
+      </div>
+    </section>
+
+    <!-- 6 · CARTA -->
+    <section class="pantalla carta-pantalla" data-i="6">
+      <div class="contenido">
+        <article class="carta">
+          <svg class="carta-flor" aria-hidden="true"><use href="#florcita"/></svg>
+          <p class="carta-saludo manuscrita">Sara:</p>
+          <p>Dicen que en primavera todo vuelve a florecer. Yo no necesito esperar a septiembre para sentirlo: me pasa cada vez que estás cerca.</p>
+          <p>Desde aquel 29 de agosto hasta hoy cambiaron un montón de cosas, pero hay una que no: sigo mirándote como la primera vez. Me gusta la persona que sos y me gusta la persona que soy cuando estoy con vos.</p>
+          <p>No sé qué nos traerá todo lo que viene, pero sé con quién lo quiero vivir. Y quería que este año, en lugar de un ramo que dura unos días, tuvieras uno que puedas abrir cada vez que quieras.</p>
+          <p>Feliz primavera, mi amor.</p>
+          <p class="carta-firma manuscrita">Te amo,<br>Joa 💛</p>
+        </article>
+        <button class="btn btn-secundario" id="btnReiniciar">Volver a empezar ↺</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Navegación -->
+  <nav class="nav oculto" id="nav">
+    <div class="nav-lado nav-izq"><button class="btn-nav" id="btnAnterior" aria-label="Anterior">‹</button></div>
+    <div class="nav-centro"><button class="btn btn-principal" id="btnSiguiente">Siguiente flor 🌼</button></div>
+    <div class="nav-lado nav-der"></div>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
